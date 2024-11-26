@@ -56,6 +56,11 @@ export function configure() {
     set_build_settings();
     set_inventory();
     apply_room_options();
+    context.Main.Value = false;
+    context.Secondary.Value = false;
+    context.Melee.Value = false;
+    context.Explosive.Value = false;
+    context.Build.Value = false;
 }
 
 export function create_teams() {
